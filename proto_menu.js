@@ -16,7 +16,7 @@
     
     function proto(items) {
         
-        console.log('Proto Init');
+        console.log('Proto Init', items);
         
     }
 
