@@ -10,6 +10,12 @@
  */
  
  
+$(document).ready(function() {
+
+    init_proto();
+    
+});
+ 
 function proto(items) {
         
 	$.each(items, function( index, value ) {
@@ -20,3 +26,9 @@ function proto(items) {
         
         
     }
+
+function init_proto() {
+    $('head').append('');
+    $('body').append("<div id='proto'><h3>Prototype Pages</h3><hr><ul class='contents'></ul></div>");
+
+}
