@@ -8,16 +8,15 @@
  * @param {type} $
  * @returns {undefined}
  */
-
-(function ($) {
-    
-    var items = new Array();
-    
-    
-    function proto(items) {
+ 
+ 
+function proto(items) {
         
-        console.log('Proto Init', items);
+	$.each(items, function( index, value ) {
+		var myData = "<li><a href=" + value.url + ">" + value.name + "</a></li>";
+		$('#proto .contents').append(myData);
+  		console.log('Proto Init', value.name);
+	});
+        
         
     }
-
-}(jQuery));
